@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Sub-esquema para a parte de Aprendizado
+// Sub-esquema para a parte de Aprendizado (legado — mantido para retrocompatibilidade)
 const LearnSchema = new mongoose.Schema(
     {
         explain: { type: String, required: true },
@@ -19,6 +19,16 @@ const BuildPlatformSchema = new mongoose.Schema(
     { _id: false },
 );
 
+// Sub-esquema para cada card de aprendizado detalhado
+const LearnCardSchema = new mongoose.Schema(
+    {
+        titulo: { type: String, required: true },   // ex: 'O que é placa-mãe?'
+        conteudo: { type: String, required: true },  // texto explicativo (pode conter HTML)
+        icone: { type: String, default: '📋' },      // emoji ou ícone para o card
+        ordem: { type: Number, default: 0 },         // controla a ordem de exibição
+    },
+);
+
 // Esquema Principal do Componente
 const ComponenteSchema = new mongoose.Schema(
     {
@@ -34,10 +44,13 @@ const ComponenteSchema = new mongoose.Schema(
             amd: BuildPlatformSchema,
         },
 
-        // Objeto aninhado para aprendizado
+        // Objeto aninhado para aprendizado (legado)
         learn: LearnSchema,
+
+        // Array de cards de aprendizado detalhado (novo)
+        learnCards: [LearnCardSchema],
     },
     { timestamps: true },
 );
 
-module.exports = mongoose.model('Componente', ComponenteSchema);
+module.exports = mongoose.model('Componente', ComponenteSchema);

@@ -8,6 +8,7 @@ import {
     useParams,
 } from 'react-router-dom';
 import './index.css';
+import AdminView from './AdminView';
 
 export default function App() {
     const [dados, dadosSet] = useState(null);
@@ -88,10 +89,14 @@ export default function App() {
                             />
                         }
                     />
+                    <Route path='/admin' element={<AdminView />} />
                 </Routes>
             </main>
 
-            <footer>Easy Build — GUIA DE HARDWARE PARA INICIANTES</footer>
+            <footer>
+                Easy Build — GUIA DE HARDWARE PARA INICIANTES
+                <Link to='/admin' className='admin-footer-link'>Admin</Link>
+            </footer>
         </BrowserRouter>
     );
 }
