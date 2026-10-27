@@ -1,19 +1,24 @@
 // backend/server.js
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose'); // 1. Importa o Mongoose
-require('dotenv').config(); // 2. Carrega as variáveis do .env
+const mongoose = require('mongoose');
+require('dotenv').config();
 const dns = require('dns');
 
 const componenteRoutes = require('./src/routes/componenteRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const buildRoutes = require('./src/routes/buildRoutes');
+const profileRoutes = require('./src/routes/profileRoutes');
+const chatRoutes = require('./src/routes/chatRoutes');
 
-// Força o Node.js a usar o DNS do Google para evitar o erro ECONNREFUSED no querySrv
+// Força o Node.js a usar DNS do Google para evitar ECONNREFUSED em querySrv do Atlas
 dns.setServers(['8.8.8.8', '8.8.4.4']);
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 3. Conecta ao MongoDB Atlas usando a string segura
+// Conexão ao MongoDB Atlas
 mongoose
     .connect(process.env.DATABASE_URL)
     .then(() => {
@@ -23,14 +28,25 @@ mongoose
         console.error('❌ Erro ao conectar no Atlas:', err);
     });
 
-// Usando as rotas da API com o prefixo /api
+// Rotas originais de componentes e admin
 app.use('/api', componenteRoutes);
 
-// Rota de teste
+// Rotas integradas do ecossistema Easy Build
+app.use('/api/auth', authRoutes);
+app.use('/api/builds', buildRoutes);
+app.use('/api/profile', profileRoutes);
+app.use('/api/chat', chatRoutes);
+
+// Rota de status e verificação
 app.get('/api/status', (req, res) => {
-    res.json({ status: 'API e Banco de Dados online!' });
+    res.json({
+        status: 'API do Easy Build e Banco de Dados online!',
+        version: '2.0.0',
+        modules: ['auth', 'builds', 'components', 'profile', 'chat'],
+    });
 });
 
-app.listen(3000, () => {
-    console.log('API do Easy Build rodando em http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`🚀 API do Easy Build rodando em http://localhost:${PORT}`);
 });

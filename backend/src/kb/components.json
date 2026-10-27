@@ -1,0 +1,86 @@
+[
+  {"id": "cpu_i5_12400f", "type": "cpu", "name": "Intel Core i5-12400F", "price": 950, "socket": "LGA1700", "tdp": 65},
+  {"id": "cpu_i5_12600k", "type": "cpu", "name": "Intel Core i5-12600K", "price": 1300, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i7_12700k", "type": "cpu", "name": "Intel Core i7-12700K", "price": 1800, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i9_12900k", "type": "cpu", "name": "Intel Core i9-12900K", "price": 2800, "socket": "LGA1700", "tdp": 125},
+
+  {"id": "cpu_i5_13400f", "type": "cpu", "name": "Intel Core i5-13400F", "price": 1400, "socket": "LGA1700", "tdp": 65},
+  {"id": "cpu_i5_13600k", "type": "cpu", "name": "Intel Core i5-13600K", "price": 2000, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i7_13700k", "type": "cpu", "name": "Intel Core i7-13700K", "price": 2600, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i9_13900k", "type": "cpu", "name": "Intel Core i9-13900K", "price": 3800, "socket": "LGA1700", "tdp": 125},
+
+  {"id": "cpu_i5_14400f", "type": "cpu", "name": "Intel Core i5-14400F", "price": 1500, "socket": "LGA1700", "tdp": 65},
+  {"id": "cpu_i5_14600k", "type": "cpu", "name": "Intel Core i5-14600K", "price": 2200, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i7_14700k", "type": "cpu", "name": "Intel Core i7-14700K", "price": 2800, "socket": "LGA1700", "tdp": 125},
+  {"id": "cpu_i9_14900k", "type": "cpu", "name": "Intel Core i9-14900K", "price": 4000, "socket": "LGA1700", "tdp": 125},
+
+  {"id": "cpu_u5_245k", "type": "cpu", "name": "Intel Core Ultra 5 245K", "price": 2100, "socket": "LGA1851", "tdp": 125},
+  {"id": "cpu_u7_265k", "type": "cpu", "name": "Intel Core Ultra 7 265K", "price": 3000, "socket": "LGA1851", "tdp": 125},
+  {"id": "cpu_u9_285k", "type": "cpu", "name": "Intel Core Ultra 9 285K", "price": 4500, "socket": "LGA1851", "tdp": 125},
+
+  {"id": "cpu_r5_5600", "type": "cpu", "name": "AMD Ryzen 5 5600", "price": 850, "socket": "AM4", "tdp": 65},
+  {"id": "cpu_r5_5600x", "type": "cpu", "name": "AMD Ryzen 5 5600X", "price": 950, "socket": "AM4", "tdp": 65},
+  {"id": "cpu_r7_5700x", "type": "cpu", "name": "AMD Ryzen 7 5700X", "price": 1150, "socket": "AM4", "tdp": 65},
+  {"id": "cpu_r7_5800x3d", "type": "cpu", "name": "AMD Ryzen 7 5800X3D", "price": 2000, "socket": "AM4", "tdp": 105},
+
+  {"id": "cpu_r5_7600", "type": "cpu", "name": "AMD Ryzen 5 7600", "price": 1300, "socket": "AM5", "tdp": 65},
+  {"id": "cpu_r7_7700x", "type": "cpu", "name": "AMD Ryzen 7 7700X", "price": 1800, "socket": "AM5", "tdp": 105},
+  {"id": "cpu_r7_7800x3d", "type": "cpu", "name": "AMD Ryzen 7 7800X3D", "price": 2600, "socket": "AM5", "tdp": 120},
+  {"id": "cpu_r9_7900x", "type": "cpu", "name": "AMD Ryzen 9 7900X", "price": 2800, "socket": "AM5", "tdp": 170},
+  {"id": "cpu_r9_7950x", "type": "cpu", "name": "AMD Ryzen 9 7950X", "price": 4000, "socket": "AM5", "tdp": 170},
+
+  {"id": "ram_8gb_ddr3", "type": "ram", "name": "Kingston 8GB DDR3 1600MHz", "price": 150, "ramType": "DDR3"},
+  {"id": "ram_16gb_ddr3", "type": "ram", "name": "Corsair 16GB (2x8GB) DDR3 1600MHz", "price": 300, "ramType": "DDR3"},
+  
+  {"id": "ram_8gb_ddr4", "type": "ram", "name": "XPG 8GB DDR4 3200MHz", "price": 180, "ramType": "DDR4"},
+  {"id": "ram_16gb", "type": "ram", "name": "Kingston 16GB DDR4 3200MHz", "price": 350, "ramType": "DDR4"},
+  {"id": "ram_32gb_ddr4", "type": "ram", "name": "Corsair 32GB (2x16GB) DDR4 3200MHz", "price": 600, "ramType": "DDR4"},
+
+  {"id": "ram_16gb_ddr5", "type": "ram", "name": "Kingston Fury 16GB DDR5 5200MHz", "price": 450, "ramType": "DDR5"},
+  {"id": "ram_32gb_ddr5", "type": "ram", "name": "Corsair Vengeance 32GB (2x16GB) DDR5 6000MHz", "price": 850, "ramType": "DDR5"},
+  {"id": "ram_64gb_ddr5", "type": "ram", "name": "G.Skill Trident Z5 64GB (2x32GB) DDR5 6000MHz", "price": 1600, "ramType": "DDR5"},
+
+  {"id": "gpu_rx6600", "type": "gpu", "name": "AMD Radeon RX 6600 8GB", "price": 1200, "tdp": 132},
+  {"id": "gpu_rx7600", "type": "gpu", "name": "AMD Radeon RX 7600 8GB", "price": 1800, "tdp": 165},
+  {"id": "gpu_rx7800xt", "type": "gpu", "name": "AMD Radeon RX 7800 XT 16GB", "price": 3500, "tdp": 263},
+  {"id": "gpu_rx7900xtx", "type": "gpu", "name": "AMD Radeon RX 7900 XTX 24GB", "price": 6500, "tdp": 355},
+
+  {"id": "gpu_rtx3050", "type": "gpu", "name": "NVIDIA RTX 3050 8GB", "price": 1300, "tdp": 130},
+  {"id": "gpu_rtx3060", "type": "gpu", "name": "NVIDIA RTX 3060 12GB", "price": 1800, "tdp": 170},
+  {"id": "gpu_rtx4060", "type": "gpu", "name": "NVIDIA RTX 4060 8GB", "price": 2000, "tdp": 115},
+  {"id": "gpu_rtx4070", "type": "gpu", "name": "NVIDIA RTX 4070 12GB", "price": 4000, "tdp": 200},
+  {"id": "gpu_rtx4080", "type": "gpu", "name": "NVIDIA RTX 4080 16GB", "price": 7500, "tdp": 320},
+  {"id": "gpu_rtx4090", "type": "gpu", "name": "NVIDIA RTX 4090 24GB", "price": 12000, "tdp": 450},
+
+  {"id": "gpu_arc_a380", "type": "gpu", "name": "Intel Arc A380 6GB", "price": 900, "tdp": 75},
+  {"id": "gpu_arc_a750", "type": "gpu", "name": "Intel Arc A750 8GB", "price": 1400, "tdp": 225},
+  {"id": "gpu_arc_a770", "type": "gpu", "name": "Intel Arc A770 16GB", "price": 1900, "tdp": 225},
+
+  {"id": "ssd_sata_256", "type": "storage", "name": "Kingston A400 240GB SATA III", "price": 120, "capacity": "256GB"},
+  {"id": "ssd_sata_500", "type": "storage", "name": "Crucial MX500 500GB SATA III", "price": 200, "capacity": "500GB"},
+  {"id": "ssd_sata_1tb", "type": "storage", "name": "WD Blue 1TB SATA III", "price": 350, "capacity": "1TB"},
+  {"id": "ssd_sata_2tb", "type": "storage", "name": "Samsung 870 EVO 2TB SATA III", "price": 750, "capacity": "2TB"},
+
+  {"id": "ssd_nvme_entry_256", "type": "storage", "name": "Kingston NV2 250GB NVMe M.2", "price": 150, "capacity": "256GB"},
+  {"id": "ssd_nvme_entry_500", "type": "storage", "name": "Kingston NV2 500GB NVMe M.2", "price": 220, "capacity": "500GB"},
+  {"id": "ssd_nvme_entry_1tb", "type": "storage", "name": "Kingston NV2 1TB NVMe M.2", "price": 380, "capacity": "1TB"},
+  {"id": "ssd_nvme_entry_2tb", "type": "storage", "name": "Kingston NV2 2TB NVMe M.2", "price": 750, "capacity": "2TB"},
+
+  {"id": "ssd_nvme_mid_500", "type": "storage", "name": "WD Blue SN580 500GB NVMe M.2", "price": 280, "capacity": "500GB"},
+  {"id": "ssd_nvme_mid_1tb", "type": "storage", "name": "WD Blue SN580 1TB NVMe M.2", "price": 450, "capacity": "1TB"},
+  {"id": "ssd_nvme_mid_2tb", "type": "storage", "name": "WD Blue SN580 2TB NVMe M.2", "price": 850, "capacity": "2TB"},
+
+  {"id": "ssd_nvme_high_500", "type": "storage", "name": "Samsung 990 PRO 500GB NVMe M.2", "price": 450, "capacity": "500GB"},
+  {"id": "ssd_nvme_high_1tb", "type": "storage", "name": "Samsung 990 PRO 1TB NVMe M.2", "price": 800, "capacity": "1TB"},
+  {"id": "ssd_nvme_high_2tb", "type": "storage", "name": "WD Black SN850X 2TB NVMe M.2", "price": 1400, "capacity": "2TB"},
+
+  {"id": "mb_b660", "type": "motherboard", "name": "ASUS B660M-PLUS", "price": 1200, "socket": "LGA1700", "ramType": "DDR4"},
+  {"id": "mb_b550", "type": "motherboard", "name": "MSI B550M PRO-VDH", "price": 900, "socket": "AM4", "ramType": "DDR4"},
+  {"id": "mb_b650", "type": "motherboard", "name": "ASUS TUF GAMING B650-PLUS", "price": 1500, "socket": "AM5", "ramType": "DDR5"},
+  {"id": "mb_z790", "type": "motherboard", "name": "MSI Z790 TOMAHAWK", "price": 2000, "socket": "LGA1700", "ramType": "DDR5"},
+  {"id": "mb_z890", "type": "motherboard", "name": "GIGABYTE Z890 AORUS ELITE", "price": 2500, "socket": "LGA1851", "ramType": "DDR5"},
+
+  {"id": "psu_550", "type": "psu", "name": "Corsair CV550", "price": 300, "watts": 550},
+  {"id": "psu_750", "type": "psu", "name": "XPG Core Reactor 750W 80 Plus Gold", "price": 600, "watts": 750},
+  {"id": "psu_1000", "type": "psu", "name": "Corsair RM1000x 1000W 80 Plus Gold", "price": 1200, "watts": 1000}
+]
