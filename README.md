@@ -70,7 +70,7 @@ npm run dev
 
 ### `backend/.env`
 ```env
-DATABASE_URL="mongodb+srv://drkdb:thNikULHbytSRv4P@drk.roxpf.mongodb.net/easybuild?retryWrites=true&w=majority&appName=DrK"
+DATABASE_URL="suastringdeconexão"
 ADMIN_PASSWORD="easybuild2025"
 JWT_SECRET="easybuild_super_secret_jwt_key_2026"
 PORT=3000
